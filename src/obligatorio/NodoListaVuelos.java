@@ -40,6 +40,8 @@ public class NodoListaVuelos {
         this.duracion = duracion;
         this.siguiente = null;
         this.LServicios = new ListaServicios();
+        this.LEspera= new ColaEspera(10);
+        this.LReservas = new ListaReservas();
     }
 
     public int getnVuelo() {
